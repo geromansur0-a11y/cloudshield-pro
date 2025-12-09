@@ -1,2 +1,17 @@
-# Sistem-Antivirus-Al-Cloud-SentinelAl-CloudShield-
-Sistem ini dibangun dengan pendekatan hybrid:  Frontend (Endpoint Agent)... diinstal di perangkat pengguna (PC, laptop, server, mobile).  Backend (Cloud Al Engine) berjalan di cloud (misal: AWS, GCP, Azure).  Database Terpusat menyimpan metadata, signature, log ancaman, dan model Al.  API Security Gateway sebagai antarmuka aman 
+# 🛡️ SentinelAI WebGuard
+
+Antivirus berbasis web + AI — scan file langsung dari browser, tanpa instalasi.
+
+## Fitur
+- Upload & scan file dengan AI
+- Deteksi malware/phishing
+- Progressive Web App (PWA)
+- Responsive untuk HP & desktop
+
+## Teknologi
+- React + Tailwind CSS
+- FastAPI (backend)
+- Cloud-based AI engine
+
+## Demo
+[https://sentinelai-webguard.vercel.app](https://sentinelai-webguard.vercel.app)
