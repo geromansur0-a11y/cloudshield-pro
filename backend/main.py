@@ -94,14 +94,8 @@ def extract_metadata(file_path: str, filename: str):
                         "producer": str(reader.metadata.get("/Producer", "")),
                         "title": str(reader.metadata.get("/Title", "")),
                     }
-        elif ext == ".docx":
-            doc = Document(file_path)
-            core_props = doc.core_properties
-            metadata = {
-                "author": core_props.author or "",
-                "created": str(core_props.created) if core_props.created else "",
-                "last_modified_by": core_props.last_modified_by or "",
-            }
+        # elif ext == ".docx":  # Sementara dinonaktifkan di Termux
+#     metadata = {"info": "DOCX metadata disabled in mobile version"}
         elif ext == ".xlsx":
             wb = load_workbook(file_path, read_only=True)
             props = wb.properties
