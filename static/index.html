@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CloudShield Pro</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    :root { --bg: #f1f5f9; --fg: #1e293b; --card: white; --border: #e2e8f0; }
+    .dark { --bg: #0f172a; --fg: #f1f5f9; --card: #1e293b; --border: #334155; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui;
+      padding: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 16px;
+      background: var(--card);
+      color: var(--fg);
+    }
+    button {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      font-weight: bold;
+    }
+    .result, #historyList {
+      margin-top: 20px;
+      padding: 16px;
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+    .history-item {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .history-item:last-child { border-bottom: none; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🛡️ CloudShield Pro</h1>
+    <button id="themeToggle" style="width:auto;padding:8px 12px;">🌙</button>
+  </div>
+  
+  <input type="file" id="fileInput" accept="*"/>
+  <button id="scanBtn">Scan File</button>
+  
+  <div id="result"></div>
+  <div id="historyList"></div>
+
+  <script src="app.js"></script>
+</body>
+  </html>
