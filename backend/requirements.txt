@@ -5,3 +5,5 @@ slowapi
 PyPDF2
 python-docx
 openpyxl
+httpx
+python-telegram-bot
