@@ -127,7 +127,7 @@ async def analyze_file(file_path: str, filename: str):
             risk = "medium" if risk == "low" else risk
 
     metadata = {}
-    if filename.lower().endswith(('.pdf', '.docx', '.xlsx')):
+    if filename.lower().endswith(('.pdf', '.xlsx')):
         metadata = extract_metadata(file_path, filename)
 
     return {
