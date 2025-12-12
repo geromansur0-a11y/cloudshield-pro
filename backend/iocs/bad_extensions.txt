@@ -1,0 +1,7 @@
+.exe
+.bat
+.scr
+.pif
+.vbs
+.js
+.ps1
